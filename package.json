@@ -1,0 +1,39 @@
+{
+  "name": "image-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/main.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "serve": "webpack serve --mode production",
+    "publish": "npm run clean && npm run build && gh-pages -d dist",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaqim/image-grid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaqim/image-grid/issues"
+  },
+  "homepage": "https://github.com/joaqim/image-grid#readme",
+  "dependencies": {
+    "yaml-loader": "^0.6.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^8.1.1",
+    "file-loader": "^6.1.0",
+    "fs": "0.0.1-security",
+    "gh-pages": "^3.1.0",
+    "html-webpack-plugin": "git://github.com/ScriptedAlchemy/html-webpack-plugin#master",
+    "js-yaml": "^4.1.0",
+    "json-loader": "^0.5.7",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
