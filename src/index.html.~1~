@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Progressive Executive Examiner</title>
+
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" href="/favicon/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="/favicon/android-chrome-512x512.png" sizes="512x512" />
+    <!-- Apple Icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/favicon/apple-touch-icon.png" />-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <!-- Standard Icons -->
+    <link rel="icon" type="image/png" href="/favicon/favicon.ico"/>
+    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32" />
+    <!-- Chrome Theme Color -->
+    <meta name="theme-color" content="#FFFFFF">
+     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,600' rel='stylesheet' type='text/css' />
+    <!--<link rel="stylesheet" type="text/css" href="/css/style.min.css" inline>-->
+    <!--<link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">-->
+    <!--
+    <% for (var chunk in htmlWebpackPlugin.files.css) { %>
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[chunk]%>" />
+    <% } %>
+    -->
+  </head>
+  <body>
+    <div class="content">
+      <div class="welcome">
+        <header>
+          <h1>Bilder</h1>
+        </header>
+      </div>
+      <div class="progressive-images" id="pig"/>
+      </div>
+      <!--<script type="text/javascript" src="vendors/pig.min.js"></script>-->
+      <!--<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>-->
+  </body>
+</html>

@@ -4,7 +4,7 @@ set -e
 #TODO: Make sure that relative paths are correct
 
 SRC_FOLDER=src/images/raw/*
-DEST_FOLDER=dist/images/
+DEST_FOLDER=public/images
 URL_PREFIX=images/
 out_file=images.yml
 
@@ -48,7 +48,7 @@ for image in $SRC_FOLDER; do
 
     for new_height in "$@"; do
         # Create the new filename
-        new_filename="${DEST_FOLDER}${new_height}/${entire_filename}"
+        new_filename="${DEST_FOLDER}/${new_height}/${entire_filename}"
 
         if [[ ! -f $new_filename ]]; then
             # Resize image
