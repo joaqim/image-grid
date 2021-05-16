@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
-    "serve": "webpack serve --mode production",
+    "dev": "webpack serve --mode production",
     "publish": "npm run build && gh-pages -d dist",
     "clean": "rm -rf dist"
   },

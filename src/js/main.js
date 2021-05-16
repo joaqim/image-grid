@@ -1,14 +1,4 @@
 import imagesData from "../images.yml";
-/*
-TODO: Make this work with node env PUBLIC_URL
-const BASE_URL =
-  process.env == "development"
-    ? "http://localhost:8000"
-    : "https://joaqim.xyz/image-grid";
-    */
-
-//const BASE_URL = "http://localhost:8000";
-const BASE_URL = "https://joaqim.xyz/image-grid";
 
 /* main */
 (function () {
@@ -21,9 +11,9 @@ const BASE_URL = "https://joaqim.xyz/image-grid";
     transitionSpeed: 500,
     primaryImageBufferHeight: 1000,
     secondaryImageBufferHeight: 300,
-    thumbnailSize: 49,
+    thumbnailSize: 200,
     urlForSize: function (filename, size) {
-      return `${BASE_URL}/images/${size}/${filename}`;
+      return `${process.env.PUBLIC_URL}/images/${size}/${filename}`;
     },
   }).enable();
 })();
