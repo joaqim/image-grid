@@ -1,0 +1,4 @@
+src/images/raw/**
+scripts/images.yml
+dist
+node_modules
