@@ -6,7 +6,7 @@ set -e
 SRC_FOLDER=src/images/raw/*
 DEST_FOLDER=dist/images/
 URL_PREFIX=images/
-out_file=images.yml
+out_file=src/images.yml
 
 # Require the <size> argument(s)
 if [[ $# -lt 1 ]]; then

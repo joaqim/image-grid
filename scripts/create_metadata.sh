@@ -14,7 +14,7 @@ if [[ $# -lt 1 ]]; then
     exit 1
 fi
 
-out_file=images.yml
+out_file=src/images.yml
 echo "" > $out_file  # wipe it out
 
 for image in $RAW_FILES; do

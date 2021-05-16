@@ -4,6 +4,7 @@ const path = require("path");
 module.exports = {
   entry: "./js/main",
   mode: "development",
+  context: path.join(__dirname, "src"),
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     port: 8000,
@@ -39,7 +40,7 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin({
-      patterns: [{ from: "public" }],
+      patterns: [{ from: path.join(__dirname, "public") }],
     }),
   ],
 };
