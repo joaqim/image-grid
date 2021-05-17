@@ -1,4 +1,4 @@
-src/images/raw/**
+public/images
 scripts/images.yml
 dist
 node_modules

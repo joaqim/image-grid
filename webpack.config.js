@@ -4,13 +4,10 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = (env) => {
-  const PUBLIC_URL = env.production
-    ? "https://joaqim.xyz"
-    : "http://localhost:8000";
   return {
     entry: "./js/main",
-    mode: "development",
     context: path.join(__dirname, "src"),
+    devtool: "eval-source-map",
     devServer: {
       contentBase: path.join(__dirname, "dist"),
       port: 8000,
@@ -47,7 +44,9 @@ module.exports = (env) => {
     },
     plugins: [
       new webpack.DefinePlugin({
-        "process.env.PUBLIC_URL": JSON.stringify(PUBLIC_URL),
+        "process.env.PUBLIC_URL": env.production
+          ? JSON.stringify("https://joaqim.xyz")
+          : JSON.stringify("http://localhost:8000"),
       }),
       new CopyWebpackPlugin({
         patterns: [{ from: path.join(__dirname, "public") }],
